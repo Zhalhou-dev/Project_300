@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <script>
+
+</script>
+        <meta charset="UTF-8">
+        <title>Temp sensor</title>
+        <script>
+            window.setTimeout( function() {
+            window.location.reload();
+            }, 1000);
+        </script>
+    </head>
+
+
+    <body>
+
+  {% if (data) > 5 and (data) < 35 %}
+  <p>Humidity is OK. I can Grow!</p>
+  <img src="../static/IMAGES-1.png" width="100%" height="100%">
+   {% endif %}
+    {% if (data) > 36 and (data) < 75 %}
+  <p>Humidity is GOOD. I feel Powerful!</p>
+  <img src="../static/IMAGES-2.png"  width="100%" height="100%">
+   {% endif %}
+    {% if (data) > 76 and (data) < 100 %}
+  <p>Humidity is HIGH. I can not grow!</p>
+  <img src="../static/IMAGES-3.png" width="100%" height="100%">
+   {% endif %}
+
+
+   </body>
+ </html>

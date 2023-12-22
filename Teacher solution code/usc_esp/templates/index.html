@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Example</title>
+        <script>
+            window.setTimeout( function() {
+            window.location.reload();
+            }, 1000);
+        </script>
+    </head>
+    <body>
+
+
+  {% if (distance) > 30 and (distance) < 180  %}
+  <p>Wall is close! Park carefully</p>
+  <img src="../static/IMAGES-1.png" width="100%" height="100%">
+   {% endif %}
+    {% if (distance) > 180 and (distance) < 330 %}
+  <p>Ultra sonic sensor is activated to park your car!</p>
+  <img src="../static/IMAGES-2.png" width="100%" height="100%">
+   {% endif %}
+
+   </body>
+ </html>

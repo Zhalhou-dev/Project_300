@@ -1,0 +1,12 @@
+#l {
+    width:max-content ;
+    height:50px;
+    color: blue;
+}
+#k{
+    width: fit-content;
+    height: 400px;
+}
+body{
+    text-align:center ;
+}
