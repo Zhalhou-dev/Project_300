@@ -12,10 +12,11 @@ def on_connect (client,rc,flags,userdata):
 	client.subscribe('topicName/pir')
 
 def on_message(client,userdata,msg):
-	detection=global;
+	
 	detection=msg.payload.decode('utf8')
 @app.route('/',methods=["GET"])
 def check_distance():
+	detection=global;
 	client = mqtt_client.Client(client_id)
 	client.on_connect()
 	client.on_message()
